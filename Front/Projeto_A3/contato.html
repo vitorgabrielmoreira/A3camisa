@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/geral.css">
+    <title>Contato - Loja de Camisas de Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info h2 {
+            color: #4CAF50;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .suggestion-form {
+            margin: 20px 0;
+        }
+        .suggestion-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .suggestion-form input, .suggestion-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .cta-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Contato</h1>
+</div>
+
+<div class="container">
+    <div class="contact-info">
+        <h2>Informações de Contato</h2>
+        <p><strong>Email:</strong> contato@lojacamisas.com.br</p>
+        <p><strong>Telefone:</strong> (31) 97185-9290</p>
+        <p><strong>Endereço:</strong> Rua Francisco Fernando Drummond, 122 - Vespasiano, MG</p>
+    </div>
+
+    <div class="suggestion-form">
+        <h2>Deixe sua Sugestão ou Dúvida</h2>
+        <form id="suggestionForm">
+            <label for="customerName">Nome:</label>
+            <input type="text" id="customerName" name="customerName" required>
+
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail" name="customerEmail" required>
+
+            <label for="customerMessage">Mensagem:</label>
+            <textarea id="customerMessage" name="customerMessage" rows="5" required></textarea>
+
+            <button type="submit" class="cta-button">Enviar</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
